@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+:root{
+    --primary-clr: #22150c;
+    --primary-text: 'Aladin', 'Roboto', Arial, Helvetica, sans-serif;
+    --secondary-text: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: var(--secondary-text);   
+}
+
+header{
+    height:100vh;
+    width:100%;
+    background-image: url(images/header-background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:white;
+    position:relative;
+}
+
+.logo img{
+    height:75px;
+    margin-top:1em;
+    margin-left:1em;
+    margin-bottom: 1em;
+}
+
+.nav-toggle{
+    display:none;
+}
+
+.nav-toggle-label{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-right:1em;
+    height:calc(75px + 2em);
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after{
+    display:block;
+    height:2px;
+    width:2.5em;
+    background:white;
+    position:relative;
+    transition:0.5s;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after{
+    content:'';
+    position:absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom:7px;
+}
+
+.nav-toggle-label span::after{
+    top:7px;
+}
+
+nav{
+    position:absolute;
+    width:100%;
+    top:calc(75px + 2em);
+    left:0;
+    display:flex;
+    justify-content: center;
+    background: var(--primary-clr);
+    z-index:100;
+    transform:scale(1,0);
+    transition: transform 400ms ease-in-out;
+    transform-origin:top;
+}
+
+nav a, header{
+    font-family: var(--primary-text);
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    opacity:0;
+    transition:opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+    color:#bea17a;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-align:center;
+}
+
+nav li{
+    font-size: 1.5rem;
+    padding-bottom:1em;
+}
+
+nav li:first-of-type{
+    padding-top:1em;
+}
+
+.nav-toggle:checked ~ nav{
+    transform:scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity:1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span{
+    transform:rotate(45deg);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::before{
+    transform:rotate(90deg)translateX(7px);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::after{
+    opacity:0;
+}
+
+
+.welcome-message{
+    position:absolute;
+    width:100%;
+    font-size:1.5rem;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.about-us-container, .get-involved-container, .find-us-container, .contact-us-container, footer{
+    margin-left:2em;
+    margin-right:2em;
+}
+
+h2{
+    text-align: center;
+    position:relative;
+}
+
+h2::before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:50%;
+    left:0;
+    height:2px;
+    width:100%;
+    background:var(--primary-clr);
+    z-index:-1;
+}
+
+h2 span{
+    background:white;
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.get-involved{
+    /* background-image: url(images/alternate-banner.png);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    width:100%;
+    color:white; */
+}
+
+.get-involved-container{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+.get-involved-container h2{
+    margin-top:0;
+}
+
+.address{
+    text-align: center;
+}
