@@ -6,6 +6,7 @@
         <meta name="description" content="Wallington Chess Club is your local chess club that has something to offer for casual players and tournament players alike.">
         <title>Wallington Chess Club</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     </head>
     <body>
 
@@ -14,27 +15,32 @@
                 <img src="images/logo.png" alt="Wallington Chess Club logo.">
             </div>
 
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
+            <button class="nav-toggle-label">
+                <span class="hamburger"></span>
+            </button>
+
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">President's Cup</a></li>
-                    <li><a href="#">Fixture & Results</a></li>
-                    <li><a href="#">Junior Club</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">President's Cup</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Fixture & Results</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Junior Club</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="welcome-message">
                 <h1>Welcome to Wallington Chess Club</h1>
             </div>
+
+            <button class="scroll-down">
+                <i class="fas fa-caret-down"></i>
+            </button>
+
         </header>
 
-        <section class="about-us">
+        <section class="about-us" id="about">
 
             <div class="about-us-container">                
                 <h2><span>About Us</span></h2>
@@ -72,6 +78,7 @@
             <div class="find-us-container">
 
                 <h2><span>Find Us</span></h2>
+                <p>Our venue is located at the address below. Full details, including a map, can be found at the <a href="http://www.wurc.org.uk/">church website</a>.</p>
                 <div class="address">
                     Wallington United Reformed Church <br>
                     Stanley Park Road <br>
@@ -85,7 +92,7 @@
 
         </section>
 
-        <section class="contact-us">
+        <section class="contact-us" id="contact">
 
             <div class="contact-us-container">
 
@@ -107,9 +114,15 @@
 
         </section>
 
+        <button class="scroll-up">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
         <footer>
             <p>Wallington Chess Club &copy; 2020</p>
-            <p><a href="www.jacobcollinsdev.com">Website designed by jacobcollinsdev</a></p>
+            <p>
+                <a href="https://www.jacobcollinsdev.com" class="reference" target="_blank">Website designed by jacobcollinsdev</a>
+            </p>
         </footer>
 
 
