@@ -1,4 +1,4 @@
-const navToggle = document.querySelector('.nav-toggle-label');
+const navToggle = document.querySelector('.nav-toggle-button');
 const navLinks = document.querySelectorAll('.nav-link');
 const scrollDown = $('.scroll-down');
 const scrollUp = $('.scroll-up');
