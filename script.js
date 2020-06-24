@@ -32,3 +32,4 @@ $(window).scroll(()=>{
         scrollUp.fadeOut(500);
     }
 })
+
