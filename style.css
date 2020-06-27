@@ -356,18 +356,113 @@ table{
     /* border:1px solid #503316; */
     width:100%;
     text-align:center;
+}
+
+.calendar-table{
     margin-bottom:2em;
 }
 
-td{
+.calendar-table td{
     padding:1rem;
-    /* border:1px solid red; */
+
 }
 
-tr:nth-child(odd){
+.calendar-table tr:nth-child(odd){
     /* background:rgba(16, 60, 28,0.3); */
     background:rgba(80, 51, 22, 0.75);
     color:white;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+
+.cup-table{
+    margin-top:2em;
+    margin-bottom:0.75em;
+}
+
+.cup-table td{
+    padding:0.5rem;
+}
+.blue-group tr:nth-child(1){
+    background:rgb(65, 209, 253);
+    color:white
+}
+
+.blue-group{
+    border:2px solid rgb(65, 209, 253);
+    border-collapse: collapse;
+}
+
+.blue-group td{
+    border:1px solid rgb(65, 209, 253);
+}
+
+.blue{
+    background-color: rgb(65, 209, 253);
+    color:white;
+}
+
+.green{
+    background-color:rgb(48, 202, 48);
+    color:white;
+}
+
+.green-group tr:nth-child(1){
+    background:rgb(48, 202, 48);
+    color:white
+}
+
+.green-group{
+    border:2px solid rgb(48, 202, 48);
+    border-collapse: collapse;
+}
+
+.green-group td{
+    border:1px solid rgb(48, 202, 48);
+}
+
+.yellow{
+    background-color:rgb(245, 241, 25);
+    color:black;
+}
+
+.yellow-group tr:nth-child(1){
+    background:rgb(245, 241, 25);
+    color:black;
+}
+
+.yellow-group{
+    border:2px solid rgb(245, 241, 25);
+    border-collapse: collapse;
+}
+
+.yellow-group td{
+    border:1px solid rgb(245, 241, 25);
+}
+
+.red{
+    background-color:rgb(223, 13, 13);
+    color:white;
+}
+
+.red-group tr:nth-child(1){
+    background:rgb(223, 13, 13);
+    color:white
+}
+
+.red-group{
+    border:2px solid rgb(223, 13, 13);
+    border-collapse: collapse;
+}
+
+.red-group td{
+    border:1px solid rgb(223, 13, 13);
+}
+
+.blank{
+    background-color: #ccc;
 }
 
 /* tr:nth-child(even){
