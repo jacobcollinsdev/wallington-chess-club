@@ -63,7 +63,7 @@ p{
 .landing-page{
     height:100vh;
     width:100%;
-    background-image: url(images/header-background-image.png);
+    background-image: url(images/header-background-image-WEB.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -252,7 +252,7 @@ h1{
 }
 
 .get-involved{
-    background-image: url(images/alternate-banner.png);
+    background-image: url(images/alternate-banner-WEB.jpg);
     background-size: cover;
     background-position:center center;
     background-repeat: no-repeat;
