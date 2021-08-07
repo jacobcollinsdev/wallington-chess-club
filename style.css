@@ -247,8 +247,9 @@ h1{
 }
 
 .information p {
-    color:red;
+    color:green;
     margin-bottom:0;
+    text-align: justify;
 }
 
 .get-involved{
